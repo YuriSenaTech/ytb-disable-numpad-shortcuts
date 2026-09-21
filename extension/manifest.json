@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Disable YouTube Number Shortcuts",
+  "version": "1.0.0",
+  "description": "Bloqueia as teclas 0-9 (fileira superior e numpad) no YouTube para não pular no vídeo sem querer. Sem permissões, sem coleta de dados.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://www.youtube-nocookie.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
