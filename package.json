@@ -1,0 +1,10 @@
+{
+  "name": "ytb-disable-numpad-shortcuts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Extensão Chrome que bloqueia os atalhos numéricos (0-9) do YouTube.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/content.test.js"
+  }
+}
